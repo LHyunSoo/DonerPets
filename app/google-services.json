@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "171746930623",
+    "firebase_url": "https://donerpets-final.firebaseio.com",
+    "project_id": "donerpets-final",
+    "storage_bucket": "donerpets-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171746930623:android:d3012ce4a9d933829ffb0a",
+        "android_client_info": {
+          "package_name": "kr.hs.emirim.sookhee.donerpets_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171746930623-3l81mv0jr09fauri2chetcurkcqhs86r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.hs.emirim.sookhee.donerpets_final",
+            "certificate_hash": "f2b6f183c8bb4202760ec0ffb71330d6d10beb74"
+          }
+        },
+        {
+          "client_id": "171746930623-smnfpg1aausdir4cbhq97q08cpl0uth9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDff_N69_mdEZIQQ2PWtbUK3L4vXYWvM-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171746930623-smnfpg1aausdir4cbhq97q08cpl0uth9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
