@@ -98,13 +98,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout611"
+            <LinearLayout
+                android:id="@+id/linearLayout611"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="220dp"
                 android:layout_marginEnd="24dp"
+                android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView30"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageButton
@@ -114,17 +117,13 @@
                     android:src="@drawable/icon_add_sharp1"
                     tools:layout_editor_absoluteX="110dp" />
 
-                <ImageButton
-                    android:id="@+id/feedUp"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/icon_add_sharp"
-                    tools:layout_editor_absoluteX="155dp" />
-
                 <TextView
                     android:id="@+id/feed"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="0"
                     android:textSize="12.5sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -132,7 +131,14 @@
                     app:layout_constraintStart_toEndOf="@+id/feedDown"
                     app:layout_constraintTop_toTopOf="parent" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageButton
+                    android:id="@+id/feedUp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_add_sharp"
+                    tools:layout_editor_absoluteX="155dp" />
+
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -158,14 +164,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout621"
+            <LinearLayout
+                android:id="@+id/linearLayout621"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="220dp"
                 android:layout_marginEnd="24dp"
+                android:gravity="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintStart_toEndOf="@+id/textView32"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/towelDown"
@@ -174,17 +184,13 @@
                     android:src="@drawable/icon_add_sharp1"
                     tools:layout_editor_absoluteX="110dp" />
 
-                <ImageButton
-                    android:id="@+id/towelUp"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/icon_add_sharp"
-                    tools:layout_editor_absoluteX="155dp" />
-
                 <TextView
                     android:id="@+id/towel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="0"
                     android:textSize="12.5sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -192,7 +198,14 @@
                     app:layout_constraintStart_toEndOf="@+id/towelDown"
                     app:layout_constraintTop_toTopOf="parent" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageButton
+                    android:id="@+id/towelUp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_add_sharp"
+                    tools:layout_editor_absoluteX="155dp" />
+
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -218,13 +231,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout631"
+            <LinearLayout
+                android:id="@+id/linearLayout631"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="220dp"
                 android:layout_marginEnd="24dp"
+                android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView34"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageButton
@@ -234,17 +250,13 @@
                     android:src="@drawable/icon_add_sharp1"
                     tools:layout_editor_absoluteX="110dp" />
 
-                <ImageButton
-                    android:id="@+id/tissueUp"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/icon_add_sharp"
-                    tools:layout_editor_absoluteX="155dp" />
-
                 <TextView
                     android:id="@+id/tissue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="0"
                     android:textSize="12.5sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -252,7 +264,14 @@
                     app:layout_constraintStart_toEndOf="@+id/tissueDown"
                     app:layout_constraintTop_toTopOf="parent" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageButton
+                    android:id="@+id/tissueUp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_add_sharp"
+                    tools:layout_editor_absoluteX="155dp" />
+
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -278,22 +297,38 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout641"
+            <LinearLayout
+                android:id="@+id/linearLayout641"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="220dp"
                 android:layout_marginEnd="24dp"
+                android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView36"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageButton
                     android:id="@+id/snackDown"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginStart="110dp"
                     android:src="@drawable/icon_add_sharp1"
                     app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/snack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textSize="12.5sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/snackUp"
+                    app:layout_constraintStart_toEndOf="@+id/snackDown"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageButton
                     android:id="@+id/snackUp"
@@ -302,18 +337,7 @@
                     android:src="@drawable/icon_add_sharp"
                     tools:layout_editor_absoluteX="155dp" />
 
-                <TextView
-                    android:id="@+id/snack"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textSize="12.5sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/snackUp"
-                    app:layout_constraintStart_toEndOf="@+id/snackDown"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -363,15 +387,16 @@
             android:id="@+id/donation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginEnd="20dp"
             android:ems="10"
+            android:gravity="end"
             android:hint="금액을 입력하세요."
             android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView27"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:gravity="end" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView27"
