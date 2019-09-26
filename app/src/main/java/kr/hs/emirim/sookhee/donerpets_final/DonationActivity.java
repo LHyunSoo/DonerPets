@@ -231,6 +231,7 @@ public class DonationActivity extends AppCompatActivity {
         }
     }
 
+    //뒤로가기
     public void onBackClick(View v){
         super.onBackPressed();
     }
