@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kr.hs.emirim.sookhee.donerpets_final"
-    >
+    package="kr.hs.emirim.sookhee.donerpets_final">
 
     <application
         android:name=".DataApplication"
@@ -10,20 +9,19 @@
         android:label="Doner Pets"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        >
-        <activity android:name=".DonationActivity" />
-        <activity android:name=".FirstStartActivity" />
-        <activity
-            android:name=".SplashActivity"
-            android:theme="@style/SplashTheme"
-            >
+        android:theme="@style/AppTheme">
+        <activity android:name=".TOSActivity"></activity>
+        <activity android:name=".DonationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FirstStartActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"></activity>
         <activity android:name=".SettingActivity" />
         <activity android:name=".JoinActivity" />
         <activity android:name=".LoginActivity" />

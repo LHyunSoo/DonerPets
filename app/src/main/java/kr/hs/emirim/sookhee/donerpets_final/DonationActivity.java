@@ -30,12 +30,6 @@ public class DonationActivity extends AppCompatActivity {
     FirebaseDatabase donationDatabase;
     DatabaseReference myDonation;
 
-    TextView text_name;
-    TextView text_phone;
-    TextView text_account;
-    EditText edit_type;
-    EditText edit_count;
-
     ImageButton feedDown;
     ImageButton towelDown;
     ImageButton tissueDown;
@@ -127,80 +121,96 @@ public class DonationActivity extends AppCompatActivity {
         feedUp = (ImageButton)findViewById(R.id.feedUp);
         feed = (TextView) findViewById(R.id.feed);
 
-        feedDown.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                countf--;
-                feed.setText(""+countf);
-            }
-        });
-        feedUp.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                countf--;
-                feed.setText(""+countf);
-            }
-        });
+        if(countf>0) {
+            feedDown.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    countf--;
+                    feed.setText("" + countf);
+                }
+            });
+        }
+        if(countf<=0) {
+            feedUp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    countf++;
+                    feed.setText("" + countf);
+                }
+            });
+        }
 
         //수건
         towelDown = (ImageButton)findViewById(R.id.towelDown);
         towelUp = (ImageButton)findViewById(R.id.towelUp);
         towel = (TextView) findViewById(R.id.towel);
 
-        towelDown.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                countt--;
-                towel.setText(""+countw);
-            }
-        });
-        towelUp.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                countt++;
-                towel.setText(""+countw);
-            }
-        });
+        if(counts>0) {
+            towelDown.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    countw--;
+                    towel.setText("" + countw);
+                }
+            });
+        }
+        if(counts<=0) {
+            towelUp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    countw++;
+                    towel.setText("" + countw);
+                }
+            });
+        }
 
         //휴지
         tissueDown = (ImageButton)findViewById(R.id.tissueDown);
         tissueUp = (ImageButton)findViewById(R.id.tissueUp);
         tissue = (TextView) findViewById(R.id.tissue);
 
-        tissueDown.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                countt--;
-                tissue.setText(""+countt);
-            }
-        });
-        tissueUp.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                countt++;
-                tissue.setText(""+countt);
-            }
-        });
+        if(counts>0) {
+            tissueDown.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    countt--;
+                    tissue.setText("" + countt);
+                }
+            });
+        }
+        if(counts<=0) {
+            tissueUp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    countt++;
+                    tissue.setText("" + countt);
+                }
+            });
+        }
 
         //간식
         snackDown = (ImageButton)findViewById(R.id.snackDown);
         snackUp = (ImageButton)findViewById(R.id.snackUp);
         snack = (TextView) findViewById(R.id.snack);
 
-        snackDown.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                countt--;
-                snack.setText(""+counts);
-            }
-        });
-        snackUp.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                countt++;
-                snack.setText(""+counts);
-            }
-        });
+        if(counts>0) {
+            snackDown.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    counts--;
+                    snack.setText("" + counts);
+                }
+            });
+        }
+        if(counts<=0) {
+            snackUp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    counts++;
+                    snack.setText("" + counts);
+                }
+            });
+        }
 
     }
 
