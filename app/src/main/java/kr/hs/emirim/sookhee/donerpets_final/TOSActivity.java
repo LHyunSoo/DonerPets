@@ -13,8 +13,6 @@ public class TOSActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tos);
     }
 
-    public void onBackClick(View v){
-        super.onBackPressed();
-    }
+    public void onBackClick(View v){super.onBackPressed();}
 
 }
