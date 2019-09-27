@@ -71,6 +71,29 @@
             android:padding="14dp"
             android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="제 2 조"
+            android:textColor="#000000"
+            android:padding="11sp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text=' 회원가입시 입력하신 이름, 휴대폰 번호, 이메일, 비밀번호는 "도너츠(DonorPets)" 어플리케이션 외에는 사용하지 않습니다. 사용자가 입력한 이름은 프로필과 댓글에 사용하고 이메일과 비밀번호는 계정 로그인을 할 때 이용되고 이후엔 사용되지 않습니다.'
+            android:background="@drawable/button5"
+            android:padding="14dp"
+            android:textSize="16sp" />
+
     </LinearLayout>
 
 </LinearLayout>
